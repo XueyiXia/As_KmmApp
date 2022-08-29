@@ -40,7 +40,7 @@ kotlin {
                 implementation("io.ktor:ktor-serialization-kotlinx-json:$ktorVersion")
 
                 //存储
-                implementation("androidx.preference:preference-ktx:1.2.0")
+//                implementation("androidx.preference:preference-ktx:1.2.0")
                 implementation("com.russhwolf:multiplatform-settings:0.9")
             }
         }

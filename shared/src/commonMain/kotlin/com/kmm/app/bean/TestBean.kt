@@ -1,7 +1,5 @@
 package com.kmm.app.bean
 
-import com.kmm.app.bean.StocksBean
-
 
 /**
  * @author: xiaxueyi

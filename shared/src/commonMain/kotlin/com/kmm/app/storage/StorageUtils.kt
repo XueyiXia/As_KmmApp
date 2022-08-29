@@ -10,15 +10,14 @@ import kotlinx.serialization.json.Json
  * @time: 09:26
  * @说明: key value 存储
  */
- private class StorageUtils {
+ public class StorageUtils {
 
     private var settings: Settings?=null;
 
     private var json: Json?=null;
 
-    constructor(settings: Settings, json: Json){
+    constructor(settings: Settings){
         this.settings=settings;
-        this.json=json;
     }
 
 
