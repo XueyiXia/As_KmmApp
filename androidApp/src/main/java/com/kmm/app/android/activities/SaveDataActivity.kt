@@ -3,7 +3,9 @@ package com.kmm.app.android.activities
 import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.View
+import android.widget.EditText
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.kmm.app.Platform
 import com.kmm.app.android.R
@@ -16,6 +18,8 @@ class SaveDataActivity : AppCompatActivity() {
 
     private lateinit var tv_show_data:TextView;
 
+    private lateinit var editInput:EditText;
+
     @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,13 +30,16 @@ class SaveDataActivity : AppCompatActivity() {
 
         tv_show_data=findViewById(R.id.tv_show_data)
 
-
+        editInput=findViewById(R.id.edit_input)
 
         tvSaveData.setOnClickListener(object : View.OnClickListener{
 
             override fun onClick(v: View?) {
 
-                Platform().putString(this@SaveDataActivity,key,"a测试代码")
+                var input=editInput.text.toString();
+                Platform().putString(this@SaveDataActivity,key,input)
+
+                Toast.makeText(this@SaveDataActivity,"存储成功",Toast.LENGTH_SHORT).show()
             }
         })
 
