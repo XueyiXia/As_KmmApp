@@ -24,7 +24,7 @@ kotlin {
     }
     
     sourceSets {
-        val ktorVersion = "2.0.2"
+        val ktorVersion = "2.1.0"
 
 //        val commonTest by getting {
 //            dependencies {
