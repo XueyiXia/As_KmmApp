@@ -17,6 +17,16 @@ android {
             isMinifyEnabled = false
         }
     }
+    buildFeatures {
+        viewBinding = true
+    }
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
 }
 
 dependencies {
@@ -27,5 +37,8 @@ dependencies {
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     //gson
     implementation ("com.google.code.gson:gson:2.8.9")
-//    implementation ("io.github.cymchad:BaseRecyclerViewAdapterHelper:4.0.0-alpha8")
+    implementation("androidx.navigation:navigation-fragment-ktx:2.3.5")
+    implementation("androidx.navigation:navigation-ui-ktx:2.3.5")
+    implementation ("androidx.lifecycle:lifecycle-viewmodel:2.5.1")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1")
 }

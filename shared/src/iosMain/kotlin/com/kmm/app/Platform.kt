@@ -9,7 +9,7 @@ actual class Platform actual constructor() {
 
     actual fun putString(settings: Settings, json: Json,key: String, value: String) {
 
-        StorageUtils(settings,json).putString(key,value)
+        StorageUtils(settings).putString(key,value)
     }
 
     actual val platform: String = UIDevice.currentDevice.systemName() + " " + UIDevice.currentDevice.systemVersion

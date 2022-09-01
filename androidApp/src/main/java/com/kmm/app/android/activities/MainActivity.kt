@@ -40,6 +40,16 @@ class MainActivity : AppCompatActivity() {
             }
         })
 
+
+        findViewById<TextView>(R.id.tv_constraint).setOnClickListener(object : View.OnClickListener{
+
+            override fun onClick(v: View?) {
+                var intent:Intent=Intent();
+                intent.setClass(this@MainActivity,ConstraintLayoutActivity::class.java)
+                startActivity(intent)
+            }
+        })
+
     }
 
     override fun onDestroy() {

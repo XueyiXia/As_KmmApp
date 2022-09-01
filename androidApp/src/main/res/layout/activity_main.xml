@@ -44,4 +44,18 @@
         android:layout_height="1dp"
         android:background="#cece"/>
 
+
+    <TextView
+        android:id="@+id/tv_constraint"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="#333"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="其他"
+        android:layout_marginStart="5dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="parent"/>
+
 </LinearLayout>
