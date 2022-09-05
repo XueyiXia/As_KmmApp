@@ -2,15 +2,30 @@ import SwiftUI
 import shared
 
 struct ContentView: View {
-	let greet = Greeting().greeting()
+    let greeting = Greeting()
 
-	var body: some View {
-		Text(greet)
-	}
+    @State var greet = "Loading..."
+
+    func load() {
+        
+        greeting.greeting { result, error in
+            if let result = result {
+                self.greet = result
+            } else if let error = error {
+                greet = "Error: \(error)"
+            }
+        }
+    }
+
+    var body: some View {
+        Text(greet).onAppear() {
+            load()
+        }
+    }
 }
 
 struct ContentView_Previews: PreviewProvider {
-	static var previews: some View {
-		ContentView()
-	}
+    static var previews: some View {
+        ContentView()
+    }
 }
