@@ -26,11 +26,11 @@ kotlin {
     sourceSets {
         val ktorVersion = "2.1.0"
 
-//        val commonTest by getting {
-//            dependencies {
-//                implementation(kotlin("test"))
-//            }
-//        }
+        val commonTest by getting {
+            dependencies {
+                implementation(kotlin("test"))
+            }
+        }
         val commonMain by getting{
             dependencies {
                 implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
@@ -47,7 +47,7 @@ kotlin {
 
 
 
-//        val androidTest by getting
+        val androidTest by getting
         val androidMain by getting{
             dependencies {
                 //网络请求
@@ -72,15 +72,15 @@ kotlin {
                 implementation("io.ktor:ktor-client-darwin:$ktorVersion")
             }
         }
-//        val iosX64Test by getting
-//        val iosArm64Test by getting
-//        val iosSimulatorArm64Test by getting
-//        val iosTest by creating {
-//            dependsOn(commonTest)
-//            iosX64Test.dependsOn(this)
-//            iosArm64Test.dependsOn(this)
-//            iosSimulatorArm64Test.dependsOn(this)
-//        }
+        val iosX64Test by getting
+        val iosArm64Test by getting
+        val iosSimulatorArm64Test by getting
+        val iosTest by creating {
+            dependsOn(commonTest)
+            iosX64Test.dependsOn(this)
+            iosArm64Test.dependsOn(this)
+            iosSimulatorArm64Test.dependsOn(this)
+        }
     }
 }
 
