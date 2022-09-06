@@ -28,19 +28,19 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        view.backgroundColor = UIColor .white
         
         title = "demo"
         
         let button = UIButton.init(type: .custom)
-        button.frame = CGRect.init(x: 100, y: 100, width: 100, height: 30)
+        button.frame = CGRect.init(x: 100, y: 150, width: 100, height: 30)
         button.backgroundColor = UIColor.red
         button.setTitle("数据存储", for: .normal)
         button.addTarget(self, action: #selector(buttonClick(button:)), for: .touchUpInside)
         view.addSubview(button);
         
         let button1 = UIButton.init(type: .custom)
-        button1.frame = CGRect.init(x: 100, y: 150, width: 100, height: 30)
+        button1.frame = CGRect.init(x: 100, y: 200, width: 100, height: 30)
         button1.backgroundColor = UIColor.red
         button1.setTitle("网络请求", for: .normal)
         button1.addTarget(self, action: #selector(buttonClick1(button:)), for: .touchUpInside)

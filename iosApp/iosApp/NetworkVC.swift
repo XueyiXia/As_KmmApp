@@ -21,22 +21,24 @@ class NetworkVC: UIViewController {
         super.viewDidLoad()
         
         view.backgroundColor = UIColor.white
-        if #available(iOS 13.0, *) {
-            let navigationBarAppearance = UINavigationBarAppearance()
-            navigationBarAppearance.configureWithOpaqueBackground()
-            navigationBarAppearance.backgroundColor = .systemPurple
-            let nav = UINavigationBar.appearance()
-            nav.standardAppearance = navigationBarAppearance;
-            nav.compactAppearance = navigationBarAppearance;
-            nav.scrollEdgeAppearance = navigationBarAppearance;
-            
-        } else {
-            let nav = UINavigationBar.appearance()
-            nav.titleTextAttributes = [NSAttributedString.Key.font:UIFont.systemFont(ofSize: 18),NSAttributedString.Key.foregroundColor:UIColor.black];
-            nav.setBackgroundImage(UIImage.init(color: .red), for: .any, barMetrics: .default)
-            nav.shadowImage = UIImage.init()
-            nav.isTranslucent = false
-        }
+        /// 设置这个页面使用小标题
+        self.navigationItem.largeTitleDisplayMode = .never
+//        if #available(iOS 13.0, *) {
+//            let navigationBarAppearance = UINavigationBarAppearance()
+//            navigationBarAppearance.configureWithOpaqueBackground()
+//            navigationBarAppearance.backgroundColor = .systemPurple
+//            let nav = UINavigationBar.appearance()
+//            nav.standardAppearance = navigationBarAppearance;
+//            nav.compactAppearance = navigationBarAppearance;
+//            nav.scrollEdgeAppearance = navigationBarAppearance;
+//
+//        } else {
+//            let nav = UINavigationBar.appearance()
+//            nav.titleTextAttributes = [NSAttributedString.Key.font:UIFont.systemFont(ofSize: 18),NSAttributedString.Key.foregroundColor:UIColor.black];
+//            nav.setBackgroundImage(UIImage.init(color: .red), for: .any, barMetrics: .default)
+//            nav.shadowImage = UIImage.init()
+//            nav.isTranslucent = false
+//        }
         
         
         title = "网络请求"

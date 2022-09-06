@@ -22,6 +22,8 @@ class DataStorageVC: UIViewController {
         
         view.backgroundColor = UIColor.white
         
+        self.navigationController?.navigationBar.prefersLargeTitles = false
+        
         title = "数据存储"
         
         feild = UITextField.init(frame: CGRect.init(x: 100, y: 150, width: 200, height: 30))
