@@ -28,21 +28,21 @@ kotlin {
 
         val commonTest by getting {
             dependencies {
-                api(kotlin("test"))
+                implementation(kotlin("test"))
             }
         }
         val commonMain by getting{
             dependencies {
-                api("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
-                api("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4")
+                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
+                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4")
                 //网络请求
-                api("io.ktor:ktor-client-core:$ktorVersion")
-                api("io.ktor:ktor-client-android:$ktorVersion")
-                api("io.ktor:ktor-client-content-negotiation:$ktorVersion")
-                api("io.ktor:ktor-serialization-kotlinx-json:$ktorVersion")
-                api ( "io.ktor:ktor-client-json-jvm:$ktorVersion")
+                implementation("io.ktor:ktor-client-core:$ktorVersion")
+                implementation("io.ktor:ktor-client-android:$ktorVersion")
+                implementation("io.ktor:ktor-client-content-negotiation:$ktorVersion")
+                implementation("io.ktor:ktor-serialization-kotlinx-json:$ktorVersion")
+                implementation ( "io.ktor:ktor-client-json-jvm:$ktorVersion")
                 //存储
-                api("com.russhwolf:multiplatform-settings:0.9")
+                implementation("com.russhwolf:multiplatform-settings:0.9")
             }
         }
 
@@ -52,11 +52,11 @@ kotlin {
         val androidMain by getting{
             dependencies {
                 //网络请求
-                api("io.ktor:ktor-client-core:$ktorVersion")
-                api("io.ktor:ktor-client-android:$ktorVersion")
-                api("io.ktor:ktor-client-content-negotiation:$ktorVersion")
-                api("io.ktor:ktor-serialization-kotlinx-json:$ktorVersion")
-                api ( "io.ktor:ktor-client-json-jvm:$ktorVersion")
+                implementation("io.ktor:ktor-client-core:$ktorVersion")
+                implementation("io.ktor:ktor-client-android:$ktorVersion")
+                implementation("io.ktor:ktor-client-content-negotiation:$ktorVersion")
+                implementation("io.ktor:ktor-serialization-kotlinx-json:$ktorVersion")
+                implementation ( "io.ktor:ktor-client-json-jvm:$ktorVersion")
             }
         }
 
@@ -74,7 +74,7 @@ kotlin {
 
             dependencies {
                 //网络请求
-                api("io.ktor:ktor-client-darwin:$ktorVersion")
+                implementation("io.ktor:ktor-client-darwin:$ktorVersion")
             }
         }
         val iosX64Test by getting
