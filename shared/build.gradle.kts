@@ -22,7 +22,7 @@ kotlin {
             baseName = "shared"
         }
     }
-    
+
     sourceSets {
         val ktorVersion = "2.1.0"
 
@@ -34,14 +34,13 @@ kotlin {
         val commonMain by getting{
             dependencies {
                 implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
-                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4")
                 //网络请求
                 implementation("io.ktor:ktor-client-core:$ktorVersion")
-                implementation("io.ktor:ktor-client-android:$ktorVersion")
                 implementation("io.ktor:ktor-client-content-negotiation:$ktorVersion")
                 implementation("io.ktor:ktor-serialization-kotlinx-json:$ktorVersion")
-                implementation ( "io.ktor:ktor-client-json-jvm:$ktorVersion")
+
                 //存储
+//                implementation("androidx.preference:preference-ktx:1.2.0")
                 implementation("com.russhwolf:multiplatform-settings:0.9")
             }
         }
@@ -52,11 +51,7 @@ kotlin {
         val androidMain by getting{
             dependencies {
                 //网络请求
-                implementation("io.ktor:ktor-client-core:$ktorVersion")
                 implementation("io.ktor:ktor-client-android:$ktorVersion")
-                implementation("io.ktor:ktor-client-content-negotiation:$ktorVersion")
-                implementation("io.ktor:ktor-serialization-kotlinx-json:$ktorVersion")
-                implementation ( "io.ktor:ktor-client-json-jvm:$ktorVersion")
             }
         }
 
@@ -97,4 +92,3 @@ android {
         targetSdk = 32
     }
 }
-
