@@ -1,4 +1,8 @@
+
+apply(from = "versions.gradle")
 buildscript {
+
+//    apply("versions.gradle")
     repositories {
         gradlePluginPortal()
         google()

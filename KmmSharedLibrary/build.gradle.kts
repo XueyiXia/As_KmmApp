@@ -6,7 +6,6 @@ plugins {
 }
 
 version = "1.0"
-
 kotlin {
     android()
     iosX64()
@@ -33,15 +32,22 @@ kotlin {
 //        }
         val commonMain by getting{
             dependencies {
-                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
+//                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
                 //网络请求
-                implementation("io.ktor:ktor-client-core:$ktorVersion")
-                implementation("io.ktor:ktor-client-content-negotiation:$ktorVersion")
-                implementation("io.ktor:ktor-serialization-kotlinx-json:$ktorVersion")
+//                implementation("io.ktor:ktor-client-core:$ktorVersion")
+//                implementation("io.ktor:ktor-client-content-negotiation:$ktorVersion")
+//                implementation("io.ktor:ktor-serialization-kotlinx-json:$ktorVersion")
 
                 //存储
 //                implementation("androidx.preference:preference-ktx:1.2.0")
-                implementation("com.russhwolf:multiplatform-settings:0.9")
+//                implementation("com.russhwolf:multiplatform-settings:0.9")
+
+
+                implementation (com.hi.dhl.Deps.coroutines_core)
+                implementation (com.hi.dhl.Deps.ktor_client_core)
+                implementation (com.hi.dhl.Deps.ktor_client_content_negotiation)
+                implementation (com.hi.dhl.Deps.ktor_serialization_json)
+                implementation (com.hi.dhl.Deps.multiplatform_setting)
             }
         }
 
@@ -51,7 +57,8 @@ kotlin {
         val androidMain by getting{
             dependencies {
                 //网络请求
-                implementation("io.ktor:ktor-client-android:$ktorVersion")
+//                implementation("io.ktor:ktor-client-android:$ktorVersion")
+                implementation (com.hi.dhl.Deps.ktor_client_core_android)
             }
         }
 
@@ -87,7 +94,7 @@ kotlin {
 android {
     namespace = "com.shared.library"
     compileSdk = 32
-
+//    compileSdk build_versions.compileSdk
     defaultConfig {
         minSdk = 21
         targetSdk = 32

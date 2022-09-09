@@ -5,7 +5,6 @@ import com.kmm.app.storage.StorageUtils
 import com.russhwolf.settings.AndroidSettings
 import com.russhwolf.settings.Settings
 import com.russhwolf.settings.get
-import kotlinx.serialization.json.Json
 
 
 actual class Platform actual constructor() {
@@ -16,6 +15,8 @@ actual class Platform actual constructor() {
         val factory: Settings.Factory = AndroidSettings.Factory(context)
         var settings: Settings=factory.create("Setting");
         StorageUtils(settings).putString(key,value)
+
+
 
 
          putString(key,value)

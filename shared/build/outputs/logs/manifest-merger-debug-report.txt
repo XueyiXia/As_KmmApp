@@ -1,29 +1,29 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\As_WorkSpace\As_KmmApp\shared\src\androidMain\AndroidManifest.xml:2:1-6:12
-INJECTED from D:\As_WorkSpace\As_KmmApp\shared\src\androidMain\AndroidManifest.xml:2:1-6:12
-INJECTED from D:\As_WorkSpace\As_KmmApp\shared\src\androidMain\AndroidManifest.xml:2:1-6:12
+ADDED from E:\As_Workspace_demo\As_KmmApp\shared\src\androidMain\AndroidManifest.xml:2:1-6:12
+INJECTED from E:\As_Workspace_demo\As_KmmApp\shared\src\androidMain\AndroidManifest.xml:2:1-6:12
+INJECTED from E:\As_Workspace_demo\As_KmmApp\shared\src\androidMain\AndroidManifest.xml:2:1-6:12
 	package
-		ADDED from D:\As_WorkSpace\As_KmmApp\shared\src\androidMain\AndroidManifest.xml:2:11-32
-		INJECTED from D:\As_WorkSpace\As_KmmApp\shared\src\androidMain\AndroidManifest.xml
-		INJECTED from D:\As_WorkSpace\As_KmmApp\shared\src\androidMain\AndroidManifest.xml
+		ADDED from E:\As_Workspace_demo\As_KmmApp\shared\src\androidMain\AndroidManifest.xml:2:11-32
+		INJECTED from E:\As_Workspace_demo\As_KmmApp\shared\src\androidMain\AndroidManifest.xml
+		INJECTED from E:\As_Workspace_demo\As_KmmApp\shared\src\androidMain\AndroidManifest.xml
 	xmlns:android
-		ADDED from D:\As_WorkSpace\As_KmmApp\shared\src\androidMain\AndroidManifest.xml:3:5-63
+		ADDED from E:\As_Workspace_demo\As_KmmApp\shared\src\androidMain\AndroidManifest.xml:3:5-63
 uses-permission#android.permission.INTERNET
-ADDED from D:\As_WorkSpace\As_KmmApp\shared\src\androidMain\AndroidManifest.xml:5:5-66
+ADDED from E:\As_Workspace_demo\As_KmmApp\shared\src\androidMain\AndroidManifest.xml:5:5-66
 	android:name
-		ADDED from D:\As_WorkSpace\As_KmmApp\shared\src\androidMain\AndroidManifest.xml:5:22-64
+		ADDED from E:\As_Workspace_demo\As_KmmApp\shared\src\androidMain\AndroidManifest.xml:5:22-64
 uses-sdk
-INJECTED from D:\As_WorkSpace\As_KmmApp\shared\src\androidMain\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from D:\As_WorkSpace\As_KmmApp\shared\src\androidMain\AndroidManifest.xml
-INJECTED from D:\As_WorkSpace\As_KmmApp\shared\src\androidMain\AndroidManifest.xml
-INJECTED from D:\As_WorkSpace\As_KmmApp\shared\src\androidMain\AndroidManifest.xml
-INJECTED from D:\As_WorkSpace\As_KmmApp\shared\src\androidMain\AndroidManifest.xml
+INJECTED from E:\As_Workspace_demo\As_KmmApp\shared\src\androidMain\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from E:\As_Workspace_demo\As_KmmApp\shared\src\androidMain\AndroidManifest.xml
+INJECTED from E:\As_Workspace_demo\As_KmmApp\shared\src\androidMain\AndroidManifest.xml
+INJECTED from E:\As_Workspace_demo\As_KmmApp\shared\src\androidMain\AndroidManifest.xml
+INJECTED from E:\As_Workspace_demo\As_KmmApp\shared\src\androidMain\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from D:\As_WorkSpace\As_KmmApp\shared\src\androidMain\AndroidManifest.xml
-		ADDED from D:\As_WorkSpace\As_KmmApp\shared\src\androidMain\AndroidManifest.xml
-		INJECTED from D:\As_WorkSpace\As_KmmApp\shared\src\androidMain\AndroidManifest.xml
+		INJECTED from E:\As_Workspace_demo\As_KmmApp\shared\src\androidMain\AndroidManifest.xml
+		ADDED from E:\As_Workspace_demo\As_KmmApp\shared\src\androidMain\AndroidManifest.xml
+		INJECTED from E:\As_Workspace_demo\As_KmmApp\shared\src\androidMain\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from D:\As_WorkSpace\As_KmmApp\shared\src\androidMain\AndroidManifest.xml
-		ADDED from D:\As_WorkSpace\As_KmmApp\shared\src\androidMain\AndroidManifest.xml
-		INJECTED from D:\As_WorkSpace\As_KmmApp\shared\src\androidMain\AndroidManifest.xml
+		INJECTED from E:\As_Workspace_demo\As_KmmApp\shared\src\androidMain\AndroidManifest.xml
+		ADDED from E:\As_Workspace_demo\As_KmmApp\shared\src\androidMain\AndroidManifest.xml
+		INJECTED from E:\As_Workspace_demo\As_KmmApp\shared\src\androidMain\AndroidManifest.xml

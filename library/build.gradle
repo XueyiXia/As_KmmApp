@@ -1,13 +1,13 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 //apply plugin: 'kotlin-kapt'
-
+def version=build_versions.compile_sdk
 android {
-    compileSdkVersion 28
+    compileSdkVersion build_versions.compile_sdk
 
     defaultConfig {
-        minSdkVersion 14
-        targetSdkVersion 28
+        minSdkVersion build_versions.min_sdk
+        targetSdkVersion build_versions.target_sdk
         versionCode 1
         versionName "1.0"
     }
@@ -45,4 +45,6 @@ dependencies {
     implementation 'androidx.annotation:annotation:1.2.0'
 
     implementation 'androidx.recyclerview:recyclerview:1.2.1'
+
+    implementation(deps.coroutines_core)
 }

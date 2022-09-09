@@ -1,0 +1,30 @@
+ext.deps = [:]
+
+def versions = [:]
+versions.coroutines_core="1.6.4"
+versions.ktorVersion="2.1.0"
+versions.multiplatform_setting="0.9"
+
+
+def deps = [:]
+deps.coroutines_core="org.jetbrains.kotlinx:kotlinx-coroutines-core:$versions.coroutines_core"
+deps.ktor_client_core="io.ktor:ktor-client-core:$versions.ktorVersion"
+deps.ktor_client_content_negotiation="io.ktor:ktor-client-content-negotiation:$versions.ktorVersion"
+deps.ktor_serialization_json="io.ktor:ktor-serialization-kotlinx-json:$versions.ktorVersion"
+deps.multiplatform_setting="com.russhwolf:multiplatform-settings:$versions.multiplatform_setting"
+
+ext.deps = deps
+
+def build_versions = [:]
+build_versions.min_sdk = 21/*最低支持 android 5.0 */
+build_versions.target_sdk = 31
+build_versions.compile_sdk = 31
+build_versions.build_tools = "31.0.3"
+ext.build_versions = build_versions
+
+def apk_versions = [:]
+apk_versions.versionCode = 1
+apk_versions.versionName = "1.0"
+ext.apk_versions = apk_versions
+
+
