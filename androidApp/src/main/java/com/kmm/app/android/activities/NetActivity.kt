@@ -47,13 +47,15 @@ class NetActivity : AppCompatActivity() {
                 greet.greeting()
             }.onSuccess {
 
-                var bean:TestBean=Gson().fromJson(it,TestBean::class.java)
-
-                bean.stocks?.get(0)?.data?.let {
-                        it1 -> dataList.addAll(it1)
-                }
-                adapter.setList(dataList)
-                symbol.text="港股代码NO.：${bean.stocks?.get(0)?.symbol}"
+                println(it.toString())
+                symbol.text=it.toString()
+//                var bean:TestBean=Gson().fromJson(it,TestBean::class.java)
+//
+//                bean.stocks?.get(0)?.data?.let {
+//                        it1 -> dataList.addAll(it1)
+//                }
+//                adapter.setList(dataList)
+//                symbol.text="港股代码NO.：${bean.stocks?.get(0)?.symbol}"
 
 
             }.onFailure {
