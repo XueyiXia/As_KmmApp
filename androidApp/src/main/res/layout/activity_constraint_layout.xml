@@ -3,9 +3,45 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:fitsSystemWindows="true">
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/test"
+        android:layout_width="0.0dp"
+        android:layout_height="wrap_content"
+        android:textColor="#333"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center|start"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:text="图是网易100分的选课首页，在Banner图的下部是推荐类目模块，其中数学、语言、小低和小高分别是推荐类目Item"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/symbol"/>
+
+    <TextView
+        android:id="@+id/symbol"
+        android:layout_width="0.dp"
+        android:layout_height="wrap_content"
+        android:textColor="#333"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="System.gc"
+        android:layout_marginEnd="@dimen/dp_10"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_10"
+        android:background="@color/design_default_color_primary_variant"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/test"
+        android:layout_marginTop="@dimen/dp_10"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
