@@ -1,5 +1,11 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
 target 'iosApp' do
   use_frameworks!
   platform :ios, '14.1'
   pod 'shared', :path => '../shared'
+  pod 'HandyJSON'
+#  pod 'RxSwift', '6.5.0'
+#  pod 'RxCocoa', '6.5.0'
+#  pod 'SnapKit'
 end

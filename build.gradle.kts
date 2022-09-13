@@ -1,4 +1,8 @@
+
+apply(from = "versions.gradle")
 buildscript {
+
+//    apply("versions.gradle")
     repositories {
         gradlePluginPortal()
         google()
@@ -14,6 +18,8 @@ allprojects {
     repositories {
         google()
         mavenCentral()
+        maven { url = uri("https://maven.pkg.jetbrains.space/public/p/ktor/eap") }
+        maven { url = uri("https://maven.pkg.jetbrains.space/kotlin/p/kotlin/dev") }
     }
 }
 
