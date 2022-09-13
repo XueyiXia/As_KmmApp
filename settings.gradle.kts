@@ -8,7 +8,7 @@
 
 plugins {
     //   https://github.com/alexvasilkov/GradleGitDependenciesPlugin
-   id("com.alexvasilkov.git-dependencies") version "2.0.4"
+//   id("com.alexvasilkov.git-dependencies") version "2.0.4"
 }
 
 
